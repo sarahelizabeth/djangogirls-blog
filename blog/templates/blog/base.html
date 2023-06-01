@@ -17,6 +17,11 @@
             <a href="{% url 'post_draft_list' %}" class="top-menu">
                 {% include './icons/file-draft.svg' %}
             </a>
+            <p class="top-menu">Hello, {{ user.username }}! <small>(<a href="{% url 'logout' %}">Log out</a>)</small></p>
+        {% else %}
+            <a href="{% url 'login' %}" class="top-menu" title="Login">
+                {% include './icons/login.svg' %}
+            </a>
         {% endif %}
         <h1><a href="/">Sarah's DjangoGirls Blog</a></h1>
       </div>
