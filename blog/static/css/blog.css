@@ -23,6 +23,7 @@ h4 {
 
 .date {
     color: #828282;
+    margin-right: 10px;
 }
 
 .save {
@@ -79,4 +80,9 @@ h4 {
 
 .comment p {
     margin-top: 10px;
+}
+
+.remove {
+    color: #40E0D0;
+    margin-left: 10px;
 }
